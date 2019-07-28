@@ -1,0 +1,50 @@
+.container {
+    padding-top: 120px;
+    line-height: 2;
+}
+
+.center {
+    text-align: center;
+}
+
+.tooltipsWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.toolTipsContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.toolTipe {
+    position: absolute;
+    z-index: 1;
+    min-width: 300px;
+    padding: 16px;
+    border: 1px solid #000;
+}
+
+.toolTipe.right {
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toolTipe.bottom {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 120%;
+}
+
+.toolTipe.top {
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 120%;
+}
+
+.toolTipe.left {
+    right: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+}

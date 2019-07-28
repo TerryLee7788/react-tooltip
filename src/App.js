@@ -1,26 +1,73 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ToolTip from './ToolTip';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            className="container"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <div
+                className="center"
+            >
+                <ToolTip
+                    render={() => (
+                        <div>123</div>
+                    )}
+                    place="top"
+                >
+                    tooltip top
+                </ToolTip>
+            </div>
+            <br />
+            <div
+                className="center"
+            >
+                <ToolTip
+                    render={() => (
+                        <div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                            <div>123</div>
+                        </div>
+                    )}
+                >
+                    tooltip right
+                </ToolTip>
+            </div>
+            <br />
+            <div
+                className="center"
+            >
+                <ToolTip
+                    render={() => (
+                        <div>123</div>
+                    )}
+                    place="left"
+                >
+                    tooltip left
+                </ToolTip>
+            </div>
+            <br />
+            <div
+                className="center"
+            >
+                <ToolTip
+                    render={() => (
+                        <div>123</div>
+                    )}
+                    place="bottom"
+                >
+                    tooltip bottom
+                </ToolTip>
+            </div>
+        </div>
+    );
 }
 
 export default App;
